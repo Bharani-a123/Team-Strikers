@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for inquiries, support, and more. We're here to help!">
+    <meta name="keywords" content="Contact, Support, Inquiries, Web Design, Ahmedabad">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .contact-info, .contact-form {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h3, .contact-form h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .contact-info div i {
+            font-size: 24px;
+            color: #0078d7;
+        }
+
+        .contact-info div p {
+            margin: 5px 0 0;
+            color: #555;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #0078d7;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #005fa3;
+        }
+
+        .captcha {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .captcha img {
+            margin-left: 10px;
+            height: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .captcha {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .captcha img {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form id="contactForm">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" aria-label="First Name" required>
+
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" aria-label="Last Name" required>
+
+                <label for="mobile">Mobile No *</label>
+                <input type="text" id="mobile" name="mobile" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" aria-label="Mobile Number" required>
+
+                <label for="email">Email ID *</label>
+                <input type="email" id="email" name="email" aria-label="Email ID" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" aria-label="Message"></textarea>
+
+                <div class="captcha">
+                    <label for="captcha">Please type the characters shown *</label>
+                    <input type="text" id="captcha" name="captcha" required>
+                    <!-- Replace 'custom-captcha.png' with the URL/path to your own CAPTCHA image -->
+                    <img src="https://th.bing.com/th/id/OIP.e-FmeUfoSRQZ-uuZKeMsOwHaCQ?rs=1&pid=ImgDetMain" alt="captcha image" id="captchaImage">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Get In Touch With Us Now!</h3>
+            <div>
+                <i>&#9742;</i>
+                <p>Phone Number</p>
+                <p>+91 77085 53549</p>
+            </div>
+            <div>
+                <i>&#9993;</i>
+                <p>Email</p>
+                <p>sece@sece.ac.in</p>
+            </div>
+            <div>
+                <i>&#x1F4CD;</i>
+                <p>Location</p>
+                <p>Sri eshwar college of engineering,kondampatti post,vadasithur via,kinathukadavu,coimbatore-641202</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    // Hide the contact form
+    document.querySelector('.contact-form').style.display = 'none';
+
+    // Create a success message
+    const successMessage = document.createElement('div');
+    successMessage.style.padding = '20px';
+    successMessage.style.backgroundColor = '#28a745'; // Green color for success
+    successMessage.style.color = '#fff';
+    successMessage.style.borderRadius = '5px';
+    successMessage.style.textAlign = 'center';
+    successMessage.innerHTML = 'Your form has been submitted successfully!';
+
+    // Append the success message to the container
+    document.querySelector('.container').appendChild(successMessage);
+});
+
+    </script>
+</body>
+</html>
