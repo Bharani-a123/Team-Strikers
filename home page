@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -178,28 +179,29 @@
         <p>Your source for the latest trends and news in the tech world.</p>
 
         <div class="cards">
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 10"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 11"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 12"></div>
+            <div class="card"><img src="https://wallpapers.com/images/hd/technology-linkedin-background-sj2amwxyouxivqod.jpg",alt="Tech Image 10"></div>
+            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.AOBNuIwMcVRHTz-MWAjAswHaE3&pid=Api&P=0&h=180" alt="Tech Image 11"></div>
+            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.UhnZs_RgbtVTR56Rsrm40gHaEE&pid=Api&H=87&W=160
+                " alt="Tech Image 12"></div>
         </div>
 
         <!-- Image and description row -->
         <div class="image-description">
-            <img src="https://via.placeholder.com/400x250" alt="Tech Image A">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.EtCREPKYyuUhwRJcy1Q6jwHaEK&pid=Api&H=89&W=160" alt="Tech Image A">
             <div class="description">
                 <h3>Innovation in AI</h3>
                 <p>Discover the latest advancements in artificial intelligence that are shaping the future of technology and industries.</p>
             </div>
         </div>
         <div class="image-description">
-            <img src="https://via.placeholder.com/400x250" alt="Tech Image B">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.56iE7RXCDe3456RKUY2zHAHaEK&pid=Api&H=89&W=160" alt="Tech Image B">
             <div class="description">
                 <h3>Breakthrough Gadgets</h3>
                 <p>Explore cutting-edge gadgets designed to make life easier, more enjoyable, and more productive.</p>
             </div>
         </div>
         <div class="image-description">
-            <img src="https://via.placeholder.com/400x250" alt="Tech Image C">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.oG1Dq77Ohw_0gu_pQJzMoAHaD4&pid=Api&H=83&W=160" alt="Tech Image C">
             <div class="description">
                 <h3>Future of Robotics</h3>
                 <p>Learn how robotics is revolutionizing industries and redefining what machines can achieve.</p>
@@ -207,15 +209,20 @@
         </div>
 
         <div class="cards">
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 1"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 2"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 3"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 4"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 5"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 6"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 7"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 8"></div>
-            <div class="card"><img src="https://via.placeholder.com/400x250" alt="Tech Image 9"></div>
+            <div class="card"><img src=, alt="Tech Image 1"></div>
+            <div class="card"><img src="ttps://tse1.mm.bing.net/th?id=OIP.LO2pDATkw85eHrQrLhnwpgHaFj&pid=Api&H=119&W=160
+                "
+ ,alt=Tech Image 2"></div>
+            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.Uy8HIpw2FoDlN-xxv0l4OAHaE7&pid=Api&H=106&W=160" alt="Tech Image 3"></div>
+            <div class="card"><img src="ttps://tse1.mm.bing.net/th?id=OIP.1VGbIetElQMXely9uXdROwHaE7&pid=Api&H=106&W=160", alt="Tech Image 4"></div>
+            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.B8J2XqWDLJ6s1NvX6d0tCwHaEK&pid=Api&P=0&h=180
+                " alt="Tech Image 5"></div>
+            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.ivCAFDNFp2T-ypHMSiZ6CwHaEK&pid=Api&H=89&W=160
+                " alt="Tech Image 6"></div>
+            <div class="card"><img src="https://tse1.mm.bing.net/th?id=OIP.8fSJZGrXcMYE1lWcCrQi7gHaEj&pid=Api&H=98&W=160
+                " alt="Tech Image 7"></div>
+            <div class="card"><img src="https://tse1.mm.bing.net/th?id=OIP.JgZTixgY5htCWowt6_mr1QHaFj&pid=Api&H=119&W=160" alt="Tech Image 8"></div>
+            <div class="card"><img src="https://tse1.mm.bing.net/th?id=OIP.1cnJcNvX6N0cLE5PgaHM-QHaEU&pid=Api&H=93&W=160" alt="Tech Image 9"></div>
         </div>
     </main>
     <footer class="footer">
