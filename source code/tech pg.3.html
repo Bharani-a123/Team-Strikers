@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Today</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #444;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .nav-container {
+            background-color: #555;
+            padding: 10px 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #666;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 20px;
+        }
+        .text-content {
+            width: 50%;
+        }
+        .image-content {
+            width: 50%;
+            text-align: center;
+        }
+        .image-content img {
+            width: 80%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .image-content p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .more-link {
+            margin-top: 20px;
+            font-size: 16px;
+            color: blue; /* Make the link blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .more-link:hover {
+            text-decoration: underline; /* Underline the link on hover */
+            color: darkblue; /* Darker blue color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Tech Today</h1>
+    </header>
+
+    <div class="nav-container">
+        <nav class="nav">
+            <a href="javascript:void(0);" onclick="showPage('quantum')">Quantum Computing</a>
+            <a href="javascript:void(0);" onclick="showPage('edge')">Edge Computing</a>
+            <a href="javascript:void(0);" onclick="showPage('ai')">Generative AI</a>
+            <a href="javascript:void(0);" onclick="showPage('nlp')">NLP</a>
+            <a href="javascript:void(0);" onclick="showPage('deep-learning')">Deep Learning</a>
+        </nav>
+    </div>
+
+    <div id="quantum" class="content" style="display: none;">
+        <div class="text-content">
+            <h2>Quantum Computing</h2>
+            <p>Quantum computing is a type of computation that leverages quantum mechanics principles. It uses quantum bits (qubits) that can exist in multiple states simultaneously, enabling quantum computers to perform certain computations far more efficiently than classical computers.</p>
+            <ul>
+                <li><strong>Quantum Superposition:</strong> Qubits can represent both 0 and 1 at the same time, vastly increasing computational power.</li>
+                <li><strong>Quantum Entanglement:</strong> Qubits can be entangled, meaning the state of one qubit directly influences the state of another, even at large distances.</li>
+                <li><strong>Quantum Speedup:</strong> Quantum computers can solve complex problems like factoring large numbers, simulating molecules, and optimizing supply chains much faster than classical computers.</li>
+                <li><strong>Applications:</strong> Quantum computing has applications in cryptography, artificial intelligence, material science, and drug discovery, offering new possibilities that were previously thought impossible.</li>
+            </ul>
+            <a href="https://www.ibm.com/topics/quantum-computing" class="more-link" target="_blank">Learn more about Quantum Computing</a>
+        </div>
+        <div class="image-content">
+            <img src="https://via.placeholder.com/400x250" alt="Quantum Computing">
+            <p>Quantum Computing - Revolutionizing Technology</p>
+        </div>
+    </div>
+
+    <div id="edge" class="content" style="display: none;">
+        <div class="text-content">
+            <h2>Edge Computing</h2>
+            <p>Edge computing is an architecture that pushes computing and data storage closer to the source of data generation, such as IoT devices, sensors, and mobile devices, to reduce latency and improve performance in real-time applications.</p>
+            <ul>
+                <li><strong>Reduced Latency:</strong> By processing data locally at the "edge" of the network, edge computing reduces the time it takes to transfer data to centralized cloud servers, making it ideal for real-time applications.</li>
+                <li><strong>Data Privacy:</strong> Sensitive data can be processed locally, reducing the need to send information to the cloud, which enhances security and privacy.</li>
+                <li><strong>Bandwidth Efficiency:</strong> Edge computing helps reduce network congestion and the need for constant data transfer to the cloud, optimizing bandwidth usage.</li>
+                <li><strong>Applications:</strong> Edge computing plays a critical role in industries such as autonomous vehicles, smart cities, healthcare, and manufacturing, where real-time processing is vital.</li>
+            </ul>
+            <a href="https://www.microsoft.com/en-us/azure/edge-computing" class="more-link" target="_blank">Learn more about Edge Computing</a>
+        </div>
+        <div class="image-content">
+            <img src="https://via.placeholder.com/400x250" alt="Edge Computing">
+            <p>Edge Computing - Bringing the Cloud to the Edge</p>
+        </div>
+    </div>
+
+    <div id="ai" class="content" style="display: none;">
+        <div class="text-content">
+            <h2>Generative AI</h2>
+            <p>Generative AI refers to algorithms that can generate new, previously unseen content based on input data. This includes applications in text, images, music, and even video. Generative models like GANs (Generative Adversarial Networks) and transformers (such as GPT-3) have revolutionized creative industries.</p>
+            <ul>
+                <li><strong>Creative Content Generation:</strong> Generative AI can create images, music, videos, and even write articles that mimic human creativity, often indistinguishable from those produced by humans.</li>
+                <li><strong>Generative Adversarial Networks (GANs):</strong> GANs consist of two neural networks that compete with each other, leading to the creation of high-quality synthetic data, from deepfake videos to realistic art.</li>
+                <li><strong>Transformers and GPT:</strong> GPT (Generative Pre-trained Transformers) models, like GPT-3, can generate text-based responses, create conversational AI, and even write entire essays on various topics.</li>
+                <li><strong>Applications:</strong> Generative AI is widely used in art, entertainment, marketing, healthcare, and more, enabling automation and enhancing creative processes.</li>
+            </ul>
+            <a href="https://openai.com/research" class="more-link" target="_blank">Learn more about Generative AI</a>
+        </div>
+        <div class="image-content">
+            <img src="https://via.placeholder.com/400x250" alt="Generative AI">
+            <p>Generative AI - The Future of Creativity</p>
+        </div>
+    </div>
+
+    <!-- NLP Page -->
+    <div id="nlp" class="content" style="display: none;">
+        <div class="text-content">
+            <h2>Natural Language Processing (NLP)</h2>
+            <p>Natural Language Processing (NLP) is a subfield of AI that focuses on the interaction between computers and human languages. It enables computers to understand, interpret, and generate human language in a way that is valuable and meaningful.</p>
+            <ul>
+                <li><strong>Text Processing:</strong> NLP can analyze, clean, and extract information from text data, including tasks like sentiment analysis, text classification, and named entity recognition.</li>
+                <li><strong>Speech Recognition:</strong> NLP is used to convert spoken language into text, enabling technologies like voice assistants and transcription software.</li>
+                <li><strong>Machine Translation:</strong> NLP helps in translating text between different languages with high accuracy.</li>
+                <li><strong>Applications:</strong> NLP is applied in virtual assistants (e.g., Siri, Alexa), chatbots, automatic translation, and social media sentiment analysis.</li>
+            </ul>
+            <a href="https://www.sas.com/en_us/insights/analytics/what-is-natural-language-processing.html" class="more-link" target="_blank">Learn more about NLP</a>
+        </div>
+        <div class="image-content">
+            <img src="https://via.placeholder.com/400x250" alt="NLP">
+            <p>Natural Language Processing - Bridging Humans and Machines</p>
+        </div>
+    </div>
+
+    <!-- Deep Learning Page -->
+    <div id="deep-learning" class="content" style="display: none;">
+        <div class="text-content">
+            <h2>Deep Learning</h2>
+            <p>Deep learning is a subset of machine learning that uses multi-layered neural networks to analyze complex data and make decisions. It is particularly effective in tasks involving large amounts of unstructured data like images, video, and text.</p>
+            <ul>
+                <li><strong>Neural Networks:</strong> Deep learning models use neural networks with multiple layers to simulate the way human brains process information.</li>
+                <li><strong>Training and Backpropagation:</strong> Deep learning models learn by training on large datasets and adjusting weights through backpropagation.</li>
+                <li><strong>Applications:</strong> Deep learning has enabled breakthroughs in fields like computer vision (e.g., image recognition), natural language processing (e.g., speech recognition), and autonomous vehicles (e.g., self-driving cars).</li>
+            </ul>
+            <a href="https://www.deeplearning.ai/" class="more-link" target="_blank">Learn more about Deep Learning</a>
+        </div>
+        <div class="image-content">
+            <img src="https://via.placeholder.com/400x250" alt="Deep Learning">
+            <p>Deep Learning - Powering the Future of AI</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the selected page and hide the others
+        function showPage(page) {
+            // Hide all pages
+            document.getElementById('quantum').style.display = 'none';
+            document.getElementById('edge').style.display = 'none';
+            document.getElementById('ai').style.display = 'none';
+            document.getElementById('nlp').style.display = 'none';
+            document.getElementById('deep-learning').style.display = 'none';
+
+            // Show the selected page
+            document.getElementById(page).style.display = 'flex';
+        }
+
+        // Default page to show on load
+        showPage('quantum');
+    </script>
+
+</body>
+</html>
+
+
+
