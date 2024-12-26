@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,41 +99,29 @@
             width: 30%;
             background-color: #eee;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             font-size: 18px;
             border: 1px solid #ccc;
             border-radius: 10px;
             overflow: hidden;
-            margin-bottom: 20px; /* Added space between rows */
+            margin-bottom: 20px;
         }
         .content .card img {
             width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
         }
-        .content .image-description {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        .content .image-description img {
-            width: 400px;
-            height: 250px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-        }
-        .content .image-description .description {
-            max-width: 400px;
-            text-align: left;
+        .content .card-content {
+            padding: 15px;
+            text-align: center;
         }
         .footer {
-            background-color: #000; /* Changed to black */
+            background-color: #000;
             text-align: center;
             padding: 20px;
             font-size: 14px;
-            color: #fff; /* Adjusted text color for better visibility */
+            color: #fff;
             border-top: 1px solid #ccc;
         }
         .footer .social-icons {
@@ -149,14 +136,16 @@
             cursor: pointer;
         }
         .footer .rights {
-            color: #ccc; /* Adjusted for consistency */
+            color: #ccc;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <h1>Tech Today</h1>
     </header>
+    <!-- Navigation Bar -->
     <div class="nav-container">
         <nav class="nav">
             <a href="#">Home</a>
@@ -167,68 +156,104 @@
             <a href="#" class="sign-in">Sign In</a>
         </nav>
     </div>
+    <!-- Search Bar -->
     <div class="search-bar">
         <input type="text" placeholder="Search...">
         <button>Search</button>
     </div>
+    <!-- Banner -->
     <div class="banner">
         Stay Ahead with the Latest in Technology
     </div>
+    <!-- Content Section -->
     <main class="content">
         <h2>Welcome to Tech Today</h2>
         <p>Your source for the latest trends and news in the tech world.</p>
 
         <div class="cards">
-            <div class="card"><img src="https://wallpapers.com/images/hd/technology-linkedin-background-sj2amwxyouxivqod.jpg",alt="Tech Image 10"></div>
-            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.AOBNuIwMcVRHTz-MWAjAswHaE3&pid=Api&P=0&h=180" alt="Tech Image 11"></div>
-            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.UhnZs_RgbtVTR56Rsrm40gHaEE&pid=Api&H=87&W=160
-                " alt="Tech Image 12"></div>
-        </div>
-
-        <!-- Image and description row -->
-        <div class="image-description">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.EtCREPKYyuUhwRJcy1Q6jwHaEK&pid=Api&H=89&W=160" alt="Tech Image A">
-            <div class="description">
-                <h3>Innovation in AI</h3>
-                <p>Discover the latest advancements in artificial intelligence that are shaping the future of technology and industries.</p>
+            <!-- Row 1 -->
+            <div class="card">
+               <a href="https://innotechteam.in/" ><img src="https://wallpapers.com/images/hd/technology-linkedin-background-sj2amwxyouxivqod.jpg" alt="Discover innovative tech solutions"></a>
+                <div class="card-content">
+                    <h3>Innovative Tech Solutions</h3>
+                    <p>Explore the latest advancements in technology designed to simplify everyday tasks and improve productivity.</p>
+                </div>
             </div>
-        </div>
-        <div class="image-description">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.56iE7RXCDe3456RKUY2zHAHaEK&pid=Api&H=89&W=160" alt="Tech Image B">
-            <div class="description">
-                <h3>Breakthrough Gadgets</h3>
-                <p>Explore cutting-edge gadgets designed to make life easier, more enjoyable, and more productive.</p>
+            <div class="card">
+               <a href="C:\Users\BHARANIDHARAN.S\Desktop\creathon\baa.html"> <img src="https://tse2.mm.bing.net/th?id=OIP.AOBNuIwMcVRHTz-MWAjAswHaE3&pid=Api&P=0&h=180" alt="Breaking tech news"></a>
+                <div class="card-content">
+                    <h3>The Future of AI</h3>
+                    <p>ChatGPT: Revolutionizing Conversations with AI-Powered Intelligence  
+                        Your Personal Assistant for Creativity, Productivity, and More!</p>
+                    
+                </div>
             </div>
-        </div>
-        <div class="image-description">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.oG1Dq77Ohw_0gu_pQJzMoAHaD4&pid=Api&H=83&W=160" alt="Tech Image C">
-            <div class="description">
-                <h3>Future of Robotics</h3>
-                <p>Learn how robotics is revolutionizing industries and redefining what machines can achieve.</p>
+            <div class="card">
+               <a href="https://www.w3schools.in/definition/what-is-web"> <img src="https://tse2.mm.bing.net/th?id=OIP.UhnZs_RgbtVTR56Rsrm40gHaEE&pid=Api&H=87&W=160" alt="Future of AI"></a>
+                <div class="card-content">
+                    <h3>Web World</h3>
+                    <p>"Master Full Stack Development: Build Dynamic Web Apps from Frontend to Backend  
+                        Unlock Your Potential with End-to-End Programming Skills!".</p>
+                </div>
             </div>
-        </div>
-
-        <div class="cards">
-            <div class="card"><img src=, alt="Tech Image 1"></div>
-            <div class="card"><img src="ttps://tse1.mm.bing.net/th?id=OIP.LO2pDATkw85eHrQrLhnwpgHaFj&pid=Api&H=119&W=160
-                "
- ,alt=Tech Image 2"></div>
-            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.Uy8HIpw2FoDlN-xxv0l4OAHaE7&pid=Api&H=106&W=160" alt="Tech Image 3"></div>
-            <div class="card"><img src="ttps://tse1.mm.bing.net/th?id=OIP.1VGbIetElQMXely9uXdROwHaE7&pid=Api&H=106&W=160", alt="Tech Image 4"></div>
-            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.B8J2XqWDLJ6s1NvX6d0tCwHaEK&pid=Api&P=0&h=180
-                " alt="Tech Image 5"></div>
-            <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.ivCAFDNFp2T-ypHMSiZ6CwHaEK&pid=Api&H=89&W=160
-                " alt="Tech Image 6"></div>
-            <div class="card"><img src="https://tse1.mm.bing.net/th?id=OIP.8fSJZGrXcMYE1lWcCrQi7gHaEj&pid=Api&H=98&W=160
-                " alt="Tech Image 7"></div>
-            <div class="card"><img src="https://tse1.mm.bing.net/th?id=OIP.JgZTixgY5htCWowt6_mr1QHaFj&pid=Api&H=119&W=160" alt="Tech Image 8"></div>
-            <div class="card"><img src="https://tse1.mm.bing.net/th?id=OIP.1cnJcNvX6N0cLE5PgaHM-QHaEU&pid=Api&H=93&W=160" alt="Tech Image 9"></div>
+            <!-- Row 2 -->
+            <div class="card">
+               <a href="https://www.electronicsforu.com/tech-zone/tech-of-robotics/robotics-types-applications"> <img src="https://tse2.mm.bing.net/th?id=OIP.fbPhOzyHnnfYYGO169C0WAHaEJ&pid=Api&H=89&W=160
+                " alt="Cybersecurity Trends"></a>
+                <div class="card-content">
+                    <h3>Robotics Trends</h3>
+                    <p>"Explore the Future of Robotics: Innovating Automation and Intelligent Machines  
+                        Transform Industries with Cutting-Edge Robotic Technology!".</p>
+                </div>
+            </div>
+            <div class="card">
+               <a href="https://www.geeksforgeeks.org/virtual-reality-introduction/"> <img src="https://tse2.mm.bing.net/th?id=OIP.RQQoX58S6gm-2DZvBaOZ1AHaFj&pid=Api&H=119&W=160
+                " alt="Blockchain Technology"></a>
+                <div class="card-content">
+                    <h3>VR World</h3>
+                    <p>"Step Into the Future with Virtual Reality: Immersive Worlds at Your Fingertips  
+                        Revolutionizing Gaming, Education, and Experiences Like Never Before!"</p>
+                </div>
+            </div>
+            <div class="card">
+               <a href="https://husfarm.com/article/the-rise-of-agro-tech-opportunities-for-sustainable-farming#:~:text=This%20evolution%2C%20known%20as%20agro-tech%2C%20is%20not%20just,pressing%20challenges%20faced%20by%20the%20farming%20community%20today."> <img src="https://tse1.mm.bing.net/th?id=OIP.HN0SslqcyXjSOFAG7ePz1QHaEK&pid=Api&H=89&W=160" alt="Quantum Computing"></a>
+                <div class="card-content">
+                    <h3>Revolution at Agro</h3>
+                    <p>"Transforming Agriculture: Innovating for Sustainable Growth and Efficiency  
+                        Empowering Farmers with Smart Solutions for a Greener Future!".</p>
+                </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="card">
+              <a href="https://www.cisco.com/c/en/us/solutions/what-is-5g.html"> <img src="https://tse3.mm.bing.net/th?id=OIP.RJfDZN1ReqyDmXmnKJhM6wHaE7&pid=Api&P=0&h=180" alt="Sustainable Technology"></a>
+                <div class="card-content">
+                    <h3>5G Connectivity</h3>
+                    <p>"5G: Unlocking a New Era of Lightning-Fast Connectivity and Innovation  
+                        Revolutionizing Industries with Seamless Communication and Speed!".</p>
+                </div>
+            </div>
+            <div class="card">
+               <a href="https://www.coursera.org/articles/what-is-information-technology"> <img src="https://tse2.mm.bing.net/th?id=OIP.SdJT5I_CG3Bpj_iIkQuGYAHaEK&pid=Api&H=89&W=160" alt="Wearable Technology"></a>
+                <div class="card-content">
+                    <h3>Information  Tech</h3>
+                    <p>"Information Technology: Driving Innovation and Shaping the Future  
+                        Empowering Businesses and People with Cutting-Edge Digital Solutions!".</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href= "https://www.europeanbusinessreview.com/a-focus-on-the-relationship-between-ai-and-humans/"> <img src="https://tse1.mm.bing.net/th?id=OIP.JgZTixgY5htCWowt6_mr1QHaFj&amp;pid=Api&amp;H=119&amp;W=160" ,alt="5G Connectivity"></a>
+                 <div class="card-content">
+                    <h3>Future of World</h3>
+                    <p>The future of humans and AI will be a dynamic partnership, where AI amplifies human potential and creativity. However, it will require careful stewardship to ensure ethical use and prevent harm..</p>
+                </div>
+            </div>
         </div>
     </main>
+    <!-- Footer -->
     <footer class="footer">
         <div class="social-icons">
-            <a href="https://linkedin.com" target="_blank"><img src="https://sguru.org/wp-content/uploads/2018/02/Logo-LinkedIn-Round.png" alt="LinkdeIn"></a>
-            <a href="https://twitter.com" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.pLGU79rtXDve1Ra0Z_TcEwHaEK&pid=Api&P=0&h=180" alt="X"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="https://sguru.org/wp-content/uploads/2018/02/Logo-LinkedIn-Round.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.pLGU79rtXDve1Ra0Z_TcEwHaEK&pid=Api&P=0&h=180" alt="Twitter"></a>
             <a href="https://instagram.com" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.xa0FgRBsvMi7bmVNCDYsCgHaHa&pid=Api&P=0&h=180" alt="Instagram"></a>
             <a href="https://youtube.com" target="_blank"><img src="https://1.bp.blogspot.com/-zaoiLHspoKI/XeI_0uFAeCI/AAAAAAAAF38/CyHgdY8bdOQ7d979yOJ0voSIA8b5bAF2wCLcBGAsYHQ/s1600/Youtube-Icon-2000x2000.png" alt="YouTube"></a>
             <a href="https://facebook.com" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook"></a>
@@ -237,4 +262,3 @@
     </footer>
 </body>
 </html>
-
