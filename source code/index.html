@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Tech Advancements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card-content p {
+            margin: 0 0 15px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card-content a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Latest Tech Advancements</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://www.allaboutcircuits.com/uploads/articles/quantum_computer_block_diagram_with_temperatures_E_Charbon.jpg" alt="Quantum Computing">
+            <div class="card-content">
+                <h3>Quantum Computing</h3>
+                <p>Quantum computing uses quantum mechanics to solve problems faster than classical computers.</p>
+                <a href="quantum_computing.html">Explore</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://jelvix.com/wp-content/uploads/2020/03/edge-computing-principle.jpg" alt="Edge Computing">
+            <div class="card-content">
+                <h3>Edge Computing</h3>
+                <p>Bringing computing and data storage closer to the devices that generate data.</p>
+                <a href="edge_computing.html">Explore</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://techvify-software.com/wp-content/uploads/2023/07/230222-generative-ai-blog-2.jpg" alt="Generative AI">
+            <div class="card-content">
+                <h3>Generative AI</h3>
+                <p>AI models that create new content, such as images, music, and text.</p>
+                <a href="generative_ai.html">Explore</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.aFjMQaCXus8kH6QV9OA9CAHaFW" alt="NLP">
+            <div class="card-content">
+                <h3>Natural Language Processing (NLP)</h3>
+                <p>NLP enables computers to understand, interpret, and generate human language effectively.</p>
+                <a href="nlp.html">Explore</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.profesionalreview.com/wp-content/uploads/2019/08/Deep-Learning-4-1024x724.jpeg" alt="Deep Learning">
+            <div class="card-content">
+                <h3>Deep Learning</h3>
+                <p>A subset of machine learning that uses neural networks for analyzing complex data.</p>
+                <a href="deep_learning.html">Explore</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.bgsu.edu/content/dam/BGSU/academics/computer-science/AdobeStock-294794307.jpeg" alt="Data Science">
+            <div class="card-content">
+                <h3>Data Science</h3>
+                <p>Data science combines statistics, programming, and domain knowledge to extract insights from data.</p>
+                <a href="data_science.html">Explore</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
