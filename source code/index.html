@@ -3,153 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest Tech Advancements</title>
+    <title>My Portfolio</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        .header {
-            background-color: #444;
-            color: #fff;
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
             text-align: center;
-            padding: 20px 0;
         }
 
-        .header h1 {
-            margin: 0;
-            font-size: 36px;
+        nav ul {
+            list-style: none;
+            padding: 0;
         }
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
         }
 
-        .card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            width: 300px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 15px;
-        }
-
-        .card-content h3 {
-            margin: 0 0 10px;
-            font-size: 20px;
-            color: #333;
-        }
-
-        .card-content p {
-            margin: 0 0 15px;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .card-content a {
+        nav ul li a {
+            color: white;
             text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
         }
 
-        .card-content a:hover {
-            text-decoration: underline;
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .profile-img {
+            display: block;
+            max-width: 150px;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+        
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
 
-            .card {
-                width: 90%;
-            }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="header">
-        <h1>Latest Tech Advancements</h1>
-    </div>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+        <p>Hi, I'm Ahamed atheep. I'm passionate about coding. Currently, I'm focusing on programming languages.</p>
+    </section>
 
-    <div class="container">
-        <div class="card">
-            <img src="https://www.allaboutcircuits.com/uploads/articles/quantum_computer_block_diagram_with_temperatures_E_Charbon.jpg" alt="Quantum Computing">
-            <div class="card-content">
-                <h3>Quantum Computing</h3>
-                <p>Quantum computing uses quantum mechanics to solve problems faster than classical computers.</p>
-                <a href="quantum_computing.html">Explore</a>
-            </div>
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Marks</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>10th Grade</td>
+                <td>Pallivasal Higher secondary school</td>
+                <td>435</td>
+                <td>2021-2022</td>
+            </tr>
+            <tr>
+                <td>12th Grade</td>
+                <td>Pallivasal Higher secondary school</td>
+                <td>549</td>
+                <td>2023-2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-gallery">
+            <img src="certificate.jpg" alt="Certificate 1">
+            <!--img src="images/certificate2.jpg" alt="Certificate 2"-->
         </div>
+    </section>
 
-        <div class="card">
-            <img src="https://jelvix.com/wp-content/uploads/2020/03/edge-computing-principle.jpg" alt="Edge Computing">
-            <div class="card-content">
-                <h3>Edge Computing</h3>
-                <p>Bringing computing and data storage closer to the devices that generate data.</p>
-                <a href="edge_computing.html">Explore</a>
-            </div>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:yourname@example.com">ahamedatheep706@gmail.com</a></p>
+        <p>Phone: 7708553549</p>
+    </section>
 
-        <div class="card">
-            <img src="https://techvify-software.com/wp-content/uploads/2023/07/230222-generative-ai-blog-2.jpg" alt="Generative AI">
-            <div class="card-content">
-                <h3>Generative AI</h3>
-                <p>AI models that create new content, such as images, music, and text.</p>
-                <a href="generative_ai.html">Explore</a>
-            </div>
-        </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Ahamed atheep. All rights reserved.</p>
+    </footer>
 
-        <div class="card">
-            <img src="https://th.bing.com/th/id/OIP.aFjMQaCXus8kH6QV9OA9CAHaFW" alt="NLP">
-            <div class="card-content">
-                <h3>Natural Language Processing (NLP)</h3>
-                <p>NLP enables computers to understand, interpret, and generate human language effectively.</p>
-                <a href="nlp.html">Explore</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://www.profesionalreview.com/wp-content/uploads/2019/08/Deep-Learning-4-1024x724.jpeg" alt="Deep Learning">
-            <div class="card-content">
-                <h3>Deep Learning</h3>
-                <p>A subset of machine learning that uses neural networks for analyzing complex data.</p>
-                <a href="deep_learning.html">Explore</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://www.bgsu.edu/content/dam/BGSU/academics/computer-science/AdobeStock-294794307.jpeg" alt="Data Science">
-            <div class="card-content">
-                <h3>Data Science</h3>
-                <p>Data science combines statistics, programming, and domain knowledge to extract insights from data.</p>
-                <a href="data_science.html">Explore</a>
-            </div>
-        </div>
-    </div>
-
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
